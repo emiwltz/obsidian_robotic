@@ -10,7 +10,7 @@ Les boutons demandent le nom de la note, la créent dans le bon dossier, puis ap
 > `button-projet-perso` `button-projet-groupe` `button-projet-fil-rouge`
 
 > [!success] Compta
-> `button-depense`
+> `button-depense` `button-entree-argent`
 
 > [!info] Ressources / doc
 > `button-ressource-video` `button-ressource-docs` `button-ressource-livre` `button-ressource-forum`
@@ -23,6 +23,7 @@ Les boutons demandent le nom de la note, la créent dans le bon dossier, puis ap
 
 - [[COMPTA/Livret de compte|Livret de compte]]
 - Créer une dépense dans `COMPTA/dépenses/` avec le bouton dédié ou le modèle [[_templates/dépense|Dépense]].
+- Créer une entrée d'argent dans `COMPTA/entrées/` avec le bouton dédié ou le modèle [[_templates/entrée d'argent|Entrée d'argent]].
 
 ![[Tableau de bord.base#Compta]]
 
@@ -44,7 +45,59 @@ Ajouter les ressources dans `RESSOURCE/video`, `RESSOURCE/docs`, `RESSOURCE/livr
 - `PROJETS/groupe` : projets d'équipe.
 - `PROJETS/fil rouge` : gros projets structurants du club.
 - `COMPTA/dépenses` : une note par dépense.
+- `COMPTA/entrées` : une note par entrée d'argent.
 - `RESSOURCE/*` : vidéos, docs, livres, forums.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Définitions Buttons masquées en rendu. -->
 
@@ -103,6 +156,20 @@ align center middle
 hidden true
 ```
 ^button-depense
+
+```button
+name 💰 Entrée d'argent
+type note(COMPTA/entrées/Entrée argent, tab) template
+action entrée d'argent
+prompt true
+class club-button club-button-compta-in
+color green
+width 14
+height 2.4
+align center middle
+hidden true
+```
+^button-entree-argent
 
 ```button
 name 🎬 Vidéo

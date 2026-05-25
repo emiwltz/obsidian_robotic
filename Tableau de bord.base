@@ -1,6 +1,3 @@
-summaries:
-  Total: ""
-  Sum: values.sum().round(2)
 filters:
   and:
     - file.ext == "md"
@@ -8,14 +5,22 @@ filters:
         - file.inFolder("PROJETS")
         - file.inFolder("COMPTA")
         - file.inFolder("RESSOURCE")
-    - file.basename != "README"
     - not:
         - file.inFolder("_templates")
 formulas:
   note: file.asLink(file.basename)
+  flux: 'if(type == "entree", "Entrée", if(type == "depense", "Dépense", type))'
+  tiers: 'if(type == "entree", source, payeur)'
+  montant_signe: 'if(montant, if(type == "entree", montant, -montant), "")'
 properties:
   formula.note:
     displayName: Note
+  formula.flux:
+    displayName: Opération
+  formula.tiers:
+    displayName: Tiers
+  formula.montant_signe:
+    displayName: Solde
   type:
     displayName: Type
   categorie:
@@ -38,6 +43,14 @@ properties:
     displayName: Montant
   payeur:
     displayName: Payeur
+  source:
+    displayName: Source
+  recu_par:
+    displayName: Reçu par
+  moyen:
+    displayName: Moyen
+  affectation:
+    displayName: Affectation
   justificatif:
     displayName: Justificatif
   sujet:
@@ -64,7 +77,7 @@ views:
       - echeance
       - participants
     columnSize:
-      formula.note: 70
+      formula.note: 110
       note.categorie: 112
       note.statut: 90
       note.responsable: 135
@@ -73,6 +86,42 @@ views:
       note.participants: 287
   - type: table
     name: Compta
+    filters:
+      or:
+        - type == "depense"
+        - type == "entree"
+    groupBy:
+      property: formula.flux
+      direction: ASC
+    order:
+      - formula.note
+      - formula.flux
+      - date
+      - projet
+      - montant
+      - formula.montant_signe
+      - formula.tiers
+      - statut
+      - categorie
+      - justificatif
+    sort:
+      - property: date
+        direction: DESC
+      - property: formula.note
+        direction: ASC
+    summaries:
+      formula.montant_signe: Sum
+    columnSize:
+      formula.note: 110
+      formula.flux: 90
+      note.date: 90
+      note.projet: 120
+      note.montant: 110
+      formula.montant_signe: 110
+      formula.tiers: 140
+      note.statut: 110
+  - type: table
+    name: Dépenses
     filters:
       and:
         - type == "depense"
@@ -86,26 +135,32 @@ views:
       - montant
       - payeur
       - statut
+      - categorie
       - justificatif
-    sort:
-      - property: montant
-        direction: ASC
-      - property: statut
-        direction: DESC
-      - property: formula.note
-        direction: ASC
-      - property: payeur
-        direction: DESC
-      - property: justificatif
-        direction: DESC
     summaries:
       montant: Sum
-    columnSize:
-      formula.note: 79
-      note.date: 76
-      note.projet: 41
-      note.montant: 254
-      note.statut: 78
+  - type: table
+    name: Entrées
+    filters:
+      and:
+        - type == "entree"
+    groupBy:
+      property: projet
+      direction: ASC
+    order:
+      - formula.note
+      - date
+      - projet
+      - montant
+      - source
+      - recu_par
+      - moyen
+      - affectation
+      - statut
+      - categorie
+      - justificatif
+    summaries:
+      montant: Sum
   - type: table
     name: Ressources
     filters:

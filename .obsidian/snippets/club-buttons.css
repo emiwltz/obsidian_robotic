@@ -36,6 +36,11 @@
 
 .markdown-preview-view button.button-inline.club-button-compta,
 .markdown-source-view button.button-inline.club-button-compta {
+  background: linear-gradient(135deg, #b45309, #f97316) !important;
+}
+
+.markdown-preview-view button.button-inline.club-button-compta-in,
+.markdown-source-view button.button-inline.club-button-compta-in {
   background: linear-gradient(135deg, #15803d, #22c55e) !important;
 }
 

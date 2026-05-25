@@ -4,6 +4,16 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "montant": "number",
-    "date": "date"
+    "date": "date",
+    "type": "text",
+    "categorie": "text",
+    "statut": "text",
+    "projet": "text",
+    "payeur": "text",
+    "source": "text",
+    "recu_par": "text",
+    "moyen": "text",
+    "affectation": "text",
+    "justificatif": "text"
   }
 }
