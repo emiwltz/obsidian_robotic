@@ -1,6 +1,6 @@
 # Livret de compte
 
-Une dépense = une note dans `COMPTA/dépenses/`, créée avec le modèle [[Argent|Argent]].
+Une dépense = une note dans `COMPTA/dépenses/`, créée avec le modèle [[dépense|Argent]].
 
 ![[Tableau de bord.base#Compta]]
 

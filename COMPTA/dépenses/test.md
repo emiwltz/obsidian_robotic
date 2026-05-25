@@ -1,8 +1,9 @@
 ---
 type: depense
-date: 2026-05-25
+date:
+  "{ date }":
 projet:
-montant: "9"
+montant:
 payeur:
 statut: a-rembourser
 categorie:

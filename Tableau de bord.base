@@ -1,6 +1,6 @@
 summaries:
-  Total: |
-    values.sum(montant)
+  Total: ""
+  Sum: values.sum().round(2)
 filters:
   and:
     - file.ext == "md"
@@ -88,23 +88,23 @@ views:
       - statut
       - justificatif
     sort:
+      - property: montant
+        direction: ASC
+      - property: statut
+        direction: DESC
       - property: formula.note
         direction: ASC
       - property: payeur
         direction: DESC
-      - property: montant
-        direction: ASC
-      - property: statut
-        direction: ASC
       - property: justificatif
         direction: DESC
     summaries:
-      montant: Total
+      montant: Sum
     columnSize:
       formula.note: 79
       note.date: 76
-      note.projet: 92
-      note.montant: 81
+      note.projet: 41
+      note.montant: 254
       note.statut: 78
   - type: table
     name: Ressources

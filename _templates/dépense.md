@@ -1,7 +1,6 @@
 ---
-type: argent
-date:
-  "{ date }":
+type: depense
+date: 2026-05-25
 projet:
 montant:
 payeur:

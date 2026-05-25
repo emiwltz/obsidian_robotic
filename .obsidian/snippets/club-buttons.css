@@ -1,0 +1,45 @@
+/* Boutons d'actions rapides du vault club robotique */
+.markdown-preview-view button.button-inline.club-button,
+.markdown-source-view button.button-inline.club-button {
+  margin: 0.25rem 0.35rem 0.25rem 0 !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);
+  transition: transform 120ms ease, filter 120ms ease, box-shadow 120ms ease;
+}
+
+.markdown-preview-view button.button-inline.club-button > div,
+.markdown-source-view button.button-inline.club-button > div {
+  white-space: nowrap;
+}
+
+.markdown-preview-view button.button-inline.club-button:hover,
+.markdown-source-view button.button-inline.club-button:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.28);
+}
+
+.markdown-preview-view button.button-inline.club-button:active,
+.markdown-source-view button.button-inline.club-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.markdown-preview-view button.button-inline.club-button-projets,
+.markdown-source-view button.button-inline.club-button-projets {
+  background: linear-gradient(135deg, #2563eb, #60a5fa) !important;
+}
+
+.markdown-preview-view button.button-inline.club-button-compta,
+.markdown-source-view button.button-inline.club-button-compta {
+  background: linear-gradient(135deg, #15803d, #22c55e) !important;
+}
+
+.markdown-preview-view button.button-inline.club-button-ressources,
+.markdown-source-view button.button-inline.club-button-ressources {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa) !important;
+}

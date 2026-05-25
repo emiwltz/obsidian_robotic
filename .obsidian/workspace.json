@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9c5400b7279f3c07",
+        "id": "6dfa7999ae34e158",
         "type": "tabs",
         "children": [
           {
-            "id": "5d0508f51d26aaf3",
+            "id": "6eff177b9f02db6f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,48 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "README"
-            }
-          },
-          {
-            "id": "1ae038926daa867f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PROJETS/groupe/groupe_test.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "groupe_test"
-            }
-          },
-          {
-            "id": "87004d69a97d20a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "5d22bb9aba2db7d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "COMPTA/dépenses/test.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "test"
             }
           }
         ]
@@ -225,13 +183,18 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "5d0508f51d26aaf3",
+  "active": "6eff177b9f02db6f",
   "lastOpenFiles": [
-    "_templates/Argent.md",
+    "_templates/dépense.md",
     "README.md",
-    "PROJETS/groupe/groupe_test.md",
+    "2026-05-25.md",
+    "_templates/Projet.md",
     "COMPTA/dépenses/test.md",
+    "Invalid date.md",
+    "COMPTA/dépenses/test1.md",
+    "COMPTA/dépenses/rest1.md",
     "COMPTA/dépenses/tets.md",
+    "PROJETS/groupe/groupe_test.md",
     "_templates/Projet - groupe.md",
     "_templates/Ressource.md",
     "_templates/Ressource - livre.md",
@@ -241,7 +204,6 @@
     "_templates/Projet - fil rouge.md",
     "_templates/Projet - perso.md",
     "PROJETS/perso/Sans titre.md",
-    "_templates/Projet.md",
     "Tableau de bord.base",
     "COMPTA/dépenses/Sans titre.md",
     "RESSOURCE/Sans titre.md",
@@ -258,7 +220,6 @@
     "PROJETS/perso",
     "PROJETS/groupe",
     "PROJETS/fil rouge",
-    "COMPTA/dépenses",
-    "test.md"
+    "COMPTA/dépenses"
   ]
 }
