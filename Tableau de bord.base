@@ -1,0 +1,117 @@
+filters:
+  and:
+    - file.inFolder("PROJETS")
+    - file.ext == "md"
+    - file.basename != "README"
+    - not:
+        - file.inFolder("PROJETS/_templates")
+formulas:
+  note: file.asLink(file.basename)
+properties:
+  formula.note:
+    displayName: Note
+  type:
+    displayName: Type
+  categorie:
+    displayName: Catégorie
+  statut:
+    displayName: Statut
+  responsable:
+    displayName: Responsable
+  participants:
+    displayName: Participants
+  priorite:
+    displayName: Priorité
+  echeance:
+    displayName: Échéance
+  date:
+    displayName: Date
+  projet:
+    displayName: Projet
+  montant:
+    displayName: Montant
+  payeur:
+    displayName: Payeur
+  justificatif:
+    displayName: Justificatif
+  sujet:
+    displayName: Sujet
+  niveau:
+    displayName: Niveau
+  lien:
+    displayName: Lien
+views:
+  - type: table
+    name: Projets
+    filters:
+      and:
+        - type == "projet"
+    groupBy:
+      property: categorie
+      direction: ASC
+    order:
+      - formula.note
+      - categorie
+      - statut
+      - responsable
+      - priorite
+      - echeance
+      - participants
+    columnSize:
+      formula.note: 70
+      note.categorie: 112
+      note.statut: 90
+      note.responsable: 135
+      note.priorite: 86
+      note.echeance: 111
+      note.participants: 287
+  - type: table
+    name: Compta
+    filters:
+      and:
+        - type == "depense"
+    groupBy:
+      property: projet
+      direction: ASC
+    order:
+      - formula.note
+      - date
+      - projet
+      - montant
+      - payeur
+      - statut
+      - justificatif
+    sort:
+      - property: formula.note
+        direction: ASC
+      - property: payeur
+        direction: DESC
+      - property: montant
+        direction: ASC
+      - property: statut
+        direction: ASC
+      - property: justificatif
+        direction: DESC
+    summaries:
+      montant: Empty
+    columnSize:
+      formula.note: 79
+      note.date: 76
+      note.projet: 92
+      note.statut: 78
+  - type: table
+    name: Ressources
+    filters:
+      and:
+        - type == "ressource"
+    groupBy:
+      property: categorie
+      direction: ASC
+    order:
+      - formula.note
+      - categorie
+      - sujet
+      - niveau
+      - lien
+      - statut
+      - projet
