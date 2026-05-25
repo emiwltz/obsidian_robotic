@@ -1,7 +1,17 @@
-
 # Club robotique
 
 Espace commun pour suivre les projets, la compta et les ressources du club robotique.
+
+## Actions rapides
+
+Les boutons demandent le nom de la note, la créent dans le bon dossier, puis appliquent le bon template.
+
+| Catégorie  | Boutons                                                                                            |
+| ---------- | -------------------------------------------------------------------------------------------------- |
+| Projets    | `button-projet-perso` `button-projet-groupe` `button-projet-fil-rouge`                             |
+| Compta     | `button-depense`                                                                                   |
+| Ressources | `button-ressource-video` `button-ressource-docs` `button-ressource-livre` `button-ressource-forum` |
+|            |                                                                                                    |
 
 ## Vue d'ensemble
 
@@ -10,21 +20,21 @@ Espace commun pour suivre les projets, la compta et les ressources du club robot
 ## Compta
 
 - [[COMPTA/Livret de compte|Livret de compte]]
-- Créer une dépense dans `COMPTA/dépenses/` avec le modèle [[_templates/Dépense|Dépense]].
+- Créer une dépense dans `COMPTA/dépenses/` avec le bouton dédié ou le modèle [[Argent|Argent]].
 
 ![[Tableau de bord.base#Compta]]
 
 ## Ressources / doc
 
-Ajouter les ressources dans `RESSOURCE/video`, `RESSOURCE/docs`, `RESSOURCE/livre` ou `RESSOURCE/forum` avec le modèle [[_templates/Ressource|Ressource]].
+Ajouter les ressources dans `RESSOURCE/video`, `RESSOURCE/docs`, `RESSOURCE/livre` ou `RESSOURCE/forum` avec les boutons dédiés.
 
 ![[Tableau de bord.base#Ressources]]
 
 ## Ajouter une entrée
 
-1. Créer une note dans le bon dossier.
-2. Insérer le modèle correspondant : [[_templates/Projet|Projet]], [[_templates/Dépense|Dépense]] ou [[_templates/Ressource|Ressource]].
-3. Remplir les propriétés en haut de la note : les bases se mettent à jour automatiquement.
+1. Cliquer sur le bouton correspondant.
+2. Donner un nom clair à la note.
+3. Remplir les propriétés restantes en haut de la note : les bases se mettent à jour automatiquement.
 
 ## Dossiers
 
@@ -34,4 +44,84 @@ Ajouter les ressources dans `RESSOURCE/video`, `RESSOURCE/docs`, `RESSOURCE/livr
 - `COMPTA/dépenses` : une note par dépense.
 - `RESSOURCE/*` : vidéos, docs, livres, forums.
 
+<!-- Définitions Buttons masquées en rendu. -->
 
+```button
+name + Projet perso
+type note(PROJETS/perso/Projet perso, tab) template
+action Projet - perso
+prompt true
+color blue
+hidden true
+```
+^button-projet-perso
+
+```button
+name + Projet groupe
+type note(PROJETS/groupe/Projet groupe, tab) template
+action Projet - groupe
+prompt true
+color blue
+hidden true
+```
+^button-projet-groupe
+
+```button
+name + Projet fil rouge
+type note(PROJETS/fil rouge/Projet fil rouge, tab) template
+action Projet - fil rouge
+prompt true
+color blue
+hidden true
+```
+^button-projet-fil-rouge
+
+```button
+name + Dépense
+type note(COMPTA/dépenses/Dépense, tab) template
+action Dépense
+prompt true
+color green
+hidden true
+```
+^button-depense
+
+```button
+name + Vidéo
+type note(RESSOURCE/video/Ressource video, tab) template
+action Ressource - video
+prompt true
+color purple
+hidden true
+```
+^button-ressource-video
+
+```button
+name + Doc
+type note(RESSOURCE/docs/Ressource docs, tab) template
+action Ressource - docs
+prompt true
+color purple
+hidden true
+```
+^button-ressource-docs
+
+```button
+name + Livre
+type note(RESSOURCE/livre/Ressource livre, tab) template
+action Ressource - livre
+prompt true
+color purple
+hidden true
+```
+^button-ressource-livre
+
+```button
+name + Forum
+type note(RESSOURCE/forum/Ressource forum, tab) template
+action Ressource - forum
+prompt true
+color purple
+hidden true
+```
+^button-ressource-forum
