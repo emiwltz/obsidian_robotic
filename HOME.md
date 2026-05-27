@@ -1,103 +1,79 @@
-# Club robotique
+---
+cssclass: club-home
+cssclasses:
+  - club-home
+---
+# 🤖 Club robotique
 
-Espace commun pour suivre les projets, la compta et les ressources du club robotique.
+| 🎛️ Centre de contrôle                                                                                                                                                                                                                                                                                              | 🚦 Mode d'emploi                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Dashboard unique pour **créer**, **suivre** et **retrouver** rapidement tout ce qui fait vivre le club : projets, compta, ressources et documentation.<br><br>**Accès rapide** · [[#⚡ Actions rapides]] · [[#📊 Vue d'ensemble]] · [[#🗂️ Carte du vault]] · [[COMPTA/Livret de compte]] · [[Tableau de bord.base]] | 1. Cliquer sur une action.<br>2. Nommer clairement la note.<br>3. Remplir les propriétés.<br>4. Les vues se mettent à jour. |
 
-## Actions rapides
+---
 
-Les boutons demandent le nom de la note, la créent dans le bon dossier, puis appliquent le bon template.
+## ⚡ Actions rapides
 
-> [!tip] Projets
-> `button-projet-perso` `button-projet-groupe` `button-projet-fil-rouge`
+| 🛠️ Projets                                                                                                                                         | 💶 Compta                                                                                                                                                |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Créer une idée perso, un projet d'équipe ou un fil rouge structurant.<br><br>`button-projet-perso` `button-projet-groupe` `button-projet-fil-rouge` | Ajouter une dépense, une entrée d'argent ou ouvrir le suivi financier.<br><br>`button-depense` `button-entree-argent`<br><br>[[COMPTA/Livret de compte]] |
 
-> [!success] Compta
-> `button-depense` `button-entree-argent`
+| 📚 Ressources | 🧭 Accès utiles |
+|---|---|
+| Archiver une vidéo, une documentation, un livre/PDF ou un post de forum.<br><br>`button-ressource-video` `button-ressource-docs` `button-ressource-livre` `button-ressource-forum` | Aller directement aux pages qui servent le plus pendant une séance.<br><br>[[Tableau de bord.base]] · [[COMPTA/Livret de compte]] · [[README]]<br><br>[[_templates/Projet]] · [[_templates/Ressource]] |
 
-> [!info] Ressources / doc
-> `button-ressource-video` `button-ressource-docs` `button-ressource-livre` `button-ressource-forum`
+---
 
-## Vue d'ensemble
+## 🧭 Navigation claire
+
+| 🛠️ Projets | 💶 Compta | 📚 Ressources | 🧩 Templates |
+|---|---|---|---|
+| Idées, prototypes, projets d'équipe, fil rouge.<br><br>Priorité : `statut`, `responsable`, `priorite`, `echeance`.<br><br>[[#🛠️ Suivi projets]] | Dépenses, entrées, justificatifs.<br><br>Priorité : `date`, `montant`, `statut`, `categorie`, `projet`.<br><br>[[#💶 Suivi compta]] | Vidéos, docs, livres/PDF, forums.<br><br>Priorité : `sujet`, `lien`, `niveau`, `statut`.<br><br>[[#📚 Ressources partagées]] | Modèles utilisés par les boutons.<br><br>À modifier seulement si la structure change.<br><br>[[_templates/Projet]] · [[_templates/Ressource]] |
+
+---
+
+## 📊 Vue d'ensemble
+
+Les vues ci-dessous viennent de [[Tableau de bord.base]] et se mettent à jour automatiquement avec les notes de `PROJETS/`, `COMPTA/` et `RESSOURCE/`.
+
+### 🛠️ Suivi projets
 
 ![[Tableau de bord.base#Projets]]
 
-## Compta
-
-- [[Livret de compte|Livret de compte]]
-- Créer une dépense dans `COMPTA/dépenses/` avec le bouton dédié ou le modèle [[_templates/dépense|Dépense]].
-- Créer une entrée d'argent dans `COMPTA/entrées/` avec le bouton dédié ou le modèle [[_templates/entrée d'argent|Entrée d'argent]].
+### 💶 Suivi compta
 
 ![[Tableau de bord.base#Compta]]
 
-## Ressources / doc
-
-Ajouter les ressources dans `RESSOURCE/video`, `RESSOURCE/docs`, `RESSOURCE/livre` ou `RESSOURCE/forum` avec les boutons dédiés.
+### 📚 Ressources partagées
 
 ![[Tableau de bord.base#Ressources]]
 
-## Ajouter une entrée
+---
 
-1. Cliquer sur le bouton correspondant.
-2. Donner un nom clair à la note.
-3. Remplir les propriétés restantes en haut de la note : les bases se mettent à jour automatiquement.
+## 🗂️ Carte du vault
 
-## Dossiers
+| 🛠️ `PROJETS/` | 💶 `COMPTA/` |
+|---|---|
+| `perso/` · projets portés par une personne<br>`groupe/` · projets d'équipe<br>`fil rouge/` · gros projets structurants | `dépenses/` · sorties d'argent<br>`entrées/` · entrées d'argent<br>[[COMPTA/Livret de compte]] · synthèse financière |
 
-- `PROJETS/perso` : projets portés par une personne.
-- `PROJETS/groupe` : projets d'équipe.
-- `PROJETS/fil rouge` : gros projets structurants du club.
-- `COMPTA/dépenses` : une note par dépense.
-- `COMPTA/entrées` : une note par entrée d'argent.
-- `RESSOURCE/*` : vidéos, docs, livres, forums.
+| 📚 `RESSOURCE/` | 🧩 `_templates/` |
+|---|---|
+| `video/` · vidéos utiles<br>`docs/` · documentation technique<br>`livre/` · livres, PDF, références longues<br>`forum/` · posts et discussions utiles | Modèles appliqués automatiquement par les boutons.<br>À modifier uniquement quand les propriétés ou dossiers changent. |
 
+---
 
+## ✅ Rituel rapide du club
 
+| Pendant la séance | Après la séance |
+|---|---|
+| ☐ Ajouter les nouvelles idées / nouveaux projets.<br>☐ Mettre à jour les statuts des projets actifs.<br>☐ Saisir les dépenses et entrées récentes. | ☐ Joindre ou lier les justificatifs manquants.<br>☐ Classer les ressources utiles trouvées.<br>☐ Relier ressources et compta au projet concerné. |
 
+## 🏷️ Repères de statuts
 
+| 🛠️ Projets | 💶 Dépenses | 💰 Entrées | 📚 Ressources |
+|---|---|---|---|
+| `idee` · `en-cours` · `bloque` · `termine`<br>Où en est le projet ? | `a-rembourser` · `rembourse` · `valide`<br>Faut-il encore agir ? | `a-encaisser` · `encaisse` · `valide`<br>L'argent est-il bien arrivé ? | `a-voir` · `utile` · `archive`<br>La ressource sert-elle encore ? |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 <!-- Définitions Buttons masquées en rendu. -->
 
