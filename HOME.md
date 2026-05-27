@@ -8,6 +8,7 @@ cssclasses:
 | 🎛️ Centre de contrôle                                                                                                                                                                                                                                                                                              | 🚦 Mode d'emploi                                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Dashboard unique pour **créer**, **suivre** et **retrouver** rapidement tout ce qui fait vivre le club : projets, compta, ressources et documentation.<br><br>**Accès rapide** · [[#⚡ Actions rapides]] · [[#📊 Vue d'ensemble]] · [[#🗂️ Carte du vault]] · [[COMPTA/Livret de compte]] · [[Tableau de bord.base]] | 1. Cliquer sur une action.<br>2. Nommer clairement la note.<br>3. Remplir les propriétés.<br>4. Les vues se mettent à jour. |
+|                                                                                                                                                                                                                                                                                                                     |                                                                                                                             |
 
 ---
 
@@ -16,10 +17,12 @@ cssclasses:
 | 🛠️ Projets                                                                                                                                         | 💶 Compta                                                                                                                                                |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Créer une idée perso, un projet d'équipe ou un fil rouge structurant.<br><br>`button-projet-perso` `button-projet-groupe` `button-projet-fil-rouge` | Ajouter une dépense, une entrée d'argent ou ouvrir le suivi financier.<br><br>`button-depense` `button-entree-argent`<br><br>[[COMPTA/Livret de compte]] |
+|                                                                                                                                                     |                                                                                                                                                          |
 
-| 📚 Ressources | 🧭 Accès utiles |
-|---|---|
+| 📚 Ressources                                                                                                                                                                      | 🧭 Accès utiles                                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Archiver une vidéo, une documentation, un livre/PDF ou un post de forum.<br><br>`button-ressource-video` `button-ressource-docs` `button-ressource-livre` `button-ressource-forum` | Aller directement aux pages qui servent le plus pendant une séance.<br><br>[[Tableau de bord.base]] · [[COMPTA/Livret de compte]] · [[README]]<br><br>[[_templates/Projet]] · [[_templates/Ressource]] |
+|                                                                                                                                                                                    |                                                                                                                                                                                                        |
 
 ---
 
@@ -51,21 +54,11 @@ Les vues ci-dessous viennent de [[Tableau de bord.base]] et se mettent à jour a
 
 ## 🗂️ Carte du vault
 
-| 🛠️ `PROJETS/` | 💶 `COMPTA/` |
-|---|---|
-| `perso/` · projets portés par une personne<br>`groupe/` · projets d'équipe<br>`fil rouge/` · gros projets structurants | `dépenses/` · sorties d'argent<br>`entrées/` · entrées d'argent<br>[[COMPTA/Livret de compte]] · synthèse financière |
-
-| 📚 `RESSOURCE/` | 🧩 `_templates/` |
-|---|---|
-| `video/` · vidéos utiles<br>`docs/` · documentation technique<br>`livre/` · livres, PDF, références longues<br>`forum/` · posts et discussions utiles | Modèles appliqués automatiquement par les boutons.<br>À modifier uniquement quand les propriétés ou dossiers changent. |
+| 🛠️ `PROJETS/`                                                                                                         | 💶 `COMPTA/`                                                                                                         | 📚 `RESSOURCE/.`                                                                                                                                      | 🧩 `_templates/`                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `perso/` · projets portés par une personne<br>`groupe/` · projets d'équipe<br>`fil rouge/` · gros projets structurants | `dépenses/` · sorties d'argent<br>`entrées/` · entrées d'argent<br>[[COMPTA/Livret de compte]] · synthèse financière | `video/` · vidéos utiles<br>`docs/` · documentation technique<br>`livre/` · livres, PDF, références longues<br>`forum/` · posts et discussions utiles | Modèles appliqués automatiquement par les boutons.<br>À modifier uniquement quand les propriétés ou dossiers changent. |
 
 ---
-
-## ✅ Rituel rapide du club
-
-| Pendant la séance | Après la séance |
-|---|---|
-| ☐ Ajouter les nouvelles idées / nouveaux projets.<br>☐ Mettre à jour les statuts des projets actifs.<br>☐ Saisir les dépenses et entrées récentes. | ☐ Joindre ou lier les justificatifs manquants.<br>☐ Classer les ressources utiles trouvées.<br>☐ Relier ressources et compta au projet concerné. |
 
 ## 🏷️ Repères de statuts
 
