@@ -9,7 +9,7 @@
 |---|---|
 | Créer une nouvelle entrée | [[HOME]] |
 | Voir les tableaux dynamiques | [[Tableau de bord.base]] |
-| Suivre la compta | [[COMPTA/Livret de compte]] |
+| Suivre la compta | [[Livret de compte]] |
 
 > [!tip] Workflow conseillé
 > 1. Ouvrir [[HOME]].  

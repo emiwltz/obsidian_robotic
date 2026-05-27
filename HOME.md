@@ -21,7 +21,7 @@ Les boutons demandent le nom de la note, la créent dans le bon dossier, puis ap
 
 ## Compta
 
-- [[COMPTA/Livret de compte|Livret de compte]]
+- [[Livret de compte|Livret de compte]]
 - Créer une dépense dans `COMPTA/dépenses/` avec le bouton dédié ou le modèle [[_templates/dépense|Dépense]].
 - Créer une entrée d'argent dans `COMPTA/entrées/` avec le bouton dédié ou le modèle [[_templates/entrée d'argent|Entrée d'argent]].
 

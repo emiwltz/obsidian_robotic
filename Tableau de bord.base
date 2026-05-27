@@ -9,9 +9,9 @@ filters:
         - file.inFolder("_templates")
 formulas:
   note: file.asLink(file.basename)
-  flux: 'if(type == "entree", "Entrée", if(type == "depense", "Dépense", type))'
-  tiers: 'if(type == "entree", source, payeur)'
-  montant_signe: 'if(montant, if(type == "entree", montant, -montant), "")'
+  flux: if(type == "entree", "Entrée", if(type == "depense", "Dépense", type))
+  tiers: if(type == "entree", source, payeur)
+  montant_signe: if(montant, if(type == "entree", montant, -montant), "")
 properties:
   formula.note:
     displayName: Note

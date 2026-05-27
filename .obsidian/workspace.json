@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "57c65483daa3c5af",
+        "id": "bf26cf03ee58fa7c",
         "type": "tabs",
         "children": [
           {
-            "id": "a1f2ff90781a1b21",
+            "id": "a62bd55832213f5d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ea0d1f151f97b570",
@@ -185,13 +184,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1f2ff90781a1b21",
+  "active": "a62bd55832213f5d",
   "lastOpenFiles": [
-    "README.md",
     "HOME.md",
+    "README.md",
+    "Tableau de bord.base",
+    "COMPTA/dépenses/test.md",
     "RESSOURCE/Excalidraw/Drawing 2026-05-25 17.04.52.excalidraw.md",
     "RESSOURCE/Excalidraw",
-    "Tableau de bord.base",
     "Invalid date.md",
     "COMPTA/entrées/ft_crepes.md",
     "COMPTA/dépenses/arduino.md",
@@ -200,7 +200,6 @@
     "COMPTA/dépenses/test1.md",
     "_templates/entrée d'argent.md",
     "COMPTA/entrées",
-    "COMPTA/dépenses/test.md",
     "_templates/Ressource.md",
     "_templates/Ressource - docs.md",
     "2026-05-25.md",
@@ -215,7 +214,6 @@
     "_templates/Projet - fil rouge.md",
     "_templates/Projet - perso.md",
     "PROJETS/perso/Sans titre.md",
-    "COMPTA/dépenses/Sans titre.md",
     "RESSOURCE/video",
     "RESSOURCE/livre",
     "RESSOURCE/forum",

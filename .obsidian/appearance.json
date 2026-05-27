@@ -1,5 +1,7 @@
 {
   "enabledCssSnippets": [
     "club-buttons"
-  ]
+  ],
+  "cssTheme": "Minimal",
+  "accentColor": "#821fe5"
 }
